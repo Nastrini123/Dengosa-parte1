@@ -90,3 +90,24 @@ main{
     max-width: 1200px;
     font-size: 25px;
 }
+.lista{
+    display: flex;
+    max-width: 1200px;
+    padding-left: 30px;
+    margin-top: 80px;
+}
+.lista ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 25px;
+}
+.lista img{
+    width: 320px;
+    height: 280px;
+}
+.ultimoparagrafo{
+    max-width:1200px;
+    font-size: 25px;
+    margin-top: 80px;
+}
