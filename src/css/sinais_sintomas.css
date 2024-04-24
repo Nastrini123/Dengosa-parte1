@@ -63,7 +63,7 @@ main{
 
 .img-sinais {
     max-width: 100%;
-    width: 90%;
+    width: 97%;
 }
 
 .title {
@@ -110,4 +110,50 @@ main{
     max-width:1200px;
     font-size: 25px;
     margin-top: 80px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #03009F;
+    color: #DCDCDC;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.img img{
+    width: 330px;
+}
+
+.info {
+    text-align: center;
+}
+
+.letra-info {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.info-alunos {
+    display: flex;
+    flex-direction: column;
+}
+
+.alunos {
+    display: flex;
+    gap: 40px;
+}
+
+.linha-azul {
+    background-color: #02006C;
+    height: 30px;
+    width: 100%;
 }
