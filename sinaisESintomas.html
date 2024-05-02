@@ -16,24 +16,64 @@
   <body>
     <header class="header">
       <div class="container">
-        <img src="./src/assets/dengosa1.png" alt="logo da pagina" />
+        <div>
+          <div class="logos">
+            <img src="./src/assets/dengosa1.png" alt="logo da pagina" />
+          </div>
+          <div>
+            <button onclick="menuShow()" id="hamburguer" class="hamburguer-button" aria-expanded="true"><img class="icon" src="./src/assets/bars-solid.svg" alt=""></button>
+          </div>
+        </div>
+        
+        
         <div class="btn-header">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="search" name="pesquisa" id="pesquisa" />
-          <button>buscar</button>
+          <div class="btn-buscar">
+            <button>buscar</button>
+          </div>
         </div>
       </div>
+      
       <div class="navegacao">
         <nav>
-          <ul>
+          <ul id="menu">
             <li class="item"><a href="#">Inicio</a></li>
-            <li class="item"><a href="#">O que voce deveria saber</a></li>
+            <li class="item">
+              <select id="cars">
+                <option>O que voce deveria saber</option>
+                <option value="sinaisESintomas">Sinais e sintomas</option>
+                <option value="transmissao">Transmissão</option>
+                <option value="diagnostico">Diagnóstico</option>
+                <option value="prevencao">Prevenção</option>
+                <option value="tratamento">Tratamento</option>
+              </select> 
+            </li>
             <li class="item"><a href="#">Vacinação</a></li>
             <li class="item"><a href="#">Situação Epidemiológica </a></li>
           </ul>
         </nav>
       </div>
+      <div class="menu-mobile">
+        <ul class="menu-mobile-ul">
+          <li class="item-mobile"><a href="#">Inicio</a></li>
+          <li class="item-mobile">
+            <select id="cars-mobile">
+              <option>O que voce deveria saber</option>
+              <option value="sinaisESintomas">Sinais e sintomas</option>
+              <option value="transmissao">Transmissão</option>
+              <option value="diagnostico">Diagnóstico</option>
+              <option value="prevencao">Prevenção</option>
+              <option value="tratamento">Tratamento</option>
+            </select> 
+          </li>
+          <li class="item-mobile"><a href="#">Vacinação</a></li>
+          <li class="item-mobile"><a href="#">Situação Epidemiológica </a></li>
+        </ul>
+      </div>
     </header>
+
+
     <main>
       <img class="img-sinais" src="./src/assets/sinais.png" alt="" />
       <div>
@@ -96,7 +136,7 @@
     </main> 
     <footer>
         <div class="container-footer">
-          <div class="img">
+          <div class="img-footer">
             <img src="./src/assets/dengosa_1-removebg-preview 1.png" alt="">
           </div>
           <div class="info">
@@ -131,4 +171,6 @@
         </div>
         <div class="linha-azul"></div>
     </footer>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
